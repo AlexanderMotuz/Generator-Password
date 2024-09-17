@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('/my-next-app/public/suisse-intl-regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray); 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background_input); 
+  border-radius: 10px;
+}
+
+
+
+
+body {
+  font-family: 'SuisseIntl', sans-serif;
+  margin: 0;
+  height: 110vh;
+  background-image: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-color: var(--black);
+  background-size: 100% 100%;
+  background-position: center center;
+
+
+}
+
+
+
+:root {
+  --black: #000;
+  --gray: #DBDBDB;
+  --white: #fff;
+  --text: #0A0A0A;
+  --gray_text: #8A8A8A;
+  --gray_input: #5C5C5C;
+  --background_input: #141414;
+  --border: #2E2E2E;
+  --nav_background:rgba(10, 10, 10, 1);
+  --nav_border:rgba(255, 255, 255, 0.10);
+  --orange:#FF5A1F;
+  --gray_result:#787A82;
+  --gray_calc_input:#F8F8F8;
+  --gray_calc_button:#3B3D41;
+  --background_calc_button:#1E1F21;
+  --checkbox:#EEE;
+  --hover_bottom:#C0C0C0;
+  --background_active_button:#A5A5A5;
+
+}
+
+
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width:1200px) {
+  .content {
+    padding: 0 20px;
+  }
+  body{
+    height: 100%;
+  }
+
+}

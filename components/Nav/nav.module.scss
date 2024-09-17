@@ -1,0 +1,89 @@
+.Nav {
+  background-color: var(--black);
+  padding: 16px;
+  border-bottom: 1px solid var(--nav_border);
+
+  .content {
+    .row_content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .name {
+        color: var(--white);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        img {
+          border-radius: 30px;
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+
+      }
+
+      .burger {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+          width: 30px;
+          height: 3px;
+          background-color: white;
+          transition: 0.3s;
+        }
+
+        &.burger_open {
+          transform: rotate(45deg);
+        }
+      }
+
+      @media (max-width: 768px) {
+
+        svg {
+          display: none;
+        }
+
+        .links {
+          display: none;
+        }
+
+        .burger {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--black);
+    padding: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
